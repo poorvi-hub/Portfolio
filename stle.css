@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*----------------HEADER---------------*/
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #b0277e;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+}
+nav .left ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: #b0277e;
+    font-size: 1.01rem;
+}
+.right{
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+/*----------------MAIN----------------*/
+
+#element{
+    color: #b0277e;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 140px 0;
+}
+.firstsection > div{
+    width: 30%;
+}
+.leftsection img{
+    width: 100%;
+    margin: -70px 0 0;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.rightsection{
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: whitesmoke;
+}
+.poorvi{
+    color: #b0277e;
+    font-weight: bold;
+}
+
+/*----------------ABOUT--------------*/
+
+.about {
+    padding: 80px 0;
+    color: #b0277e;
+}
+
+.about .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about .col1 {
+    flex-basis: 30%;
+}
+
+.about .col1 img {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.about .col2 {
+    flex-basis: 50%;
+}
+
+.about h2 {
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff69b4, #ffffff); /* Pink and white gradient */
+    -webkit-background-clip: text; /* Clip the background to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent */
+    margin-bottom: 40px;
+    text-align: left; /* Left align the heading */
+}
+
+.about p, .about ul {
+    font-size: 18px;
+    line-height: 1.6;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.about ul {
+    padding-left: 20px;
+}
+
+.about ul li {
+    margin-bottom: 10px;
+}
+
+.about span {
+    color: #ff69b4; /* Highlighted terms in pink */
+    font-weight: bold;
+}
+
+/* Button styles */
+.buttons {
+    padding: 20px 0;
+}
+
+.btn {
+    padding: 12px;
+    background-color: #b0277e;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: whitesmoke;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff69b4;
+    transform: scale(1.05);
+}
+
+/*----------------SKILSS--------------*/
+
+.skills {
+    color: #fff; /* Light text color for readability */
+}
+
+.skills-content {
+    max-width: 900px; /* Centering the content */
+    margin: 0 auto;
+    text-align: center;
+}
+.skills h2 {
+    font-size: 80px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffffff, #c8317d); /* Pink and white gradient */
+    -webkit-background-clip: text; /* Clip the background to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent */
+    margin-bottom: 40px;
+    text-align: right; /* Left align the heading */
+    display: inline-block; /* Ensure gradient appears */
+    width: 100%;
+}
+
+.skills-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap; /* Responsive design */
+}
+
+.card {
+    background-color: #333; /* Dull background color */
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease; /* Smooth transition */
+    color: #ddd; /* Text color */
+    text-align: center;
+    transform: scale(1); /* Initial scale */
+}
+
+.card h3 {
+    color: #8a1d5b;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* Hover effects */
+.card:hover {
+    background: linear-gradient(90deg, #fdfdfd, #b0277e); /* Pink and white gradient */
+    -webkit-background-clip: text; /* Clip the background to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent */
+    color: #fff; /* Text color on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+    cursor: pointer;
+}
+
+/*----------------PROJECTS----------------*/
+
+.projects {
+    padding: 10px 150px;
+    color: #fff; /* Light text color for readability */
+}
+
+.projects h2 {
+    font-size: 80px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff69b4, #ffffff); /* Pink and white gradient */
+    -webkit-background-clip: text; /* Clip the background to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent */
+    margin-bottom: 40px;
+    text-align: left; /* Left align the heading */
+    display: inline-block; /* Ensure gradient appears */
+    width: 100%; /* Ensure full width for alignment */
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap; /* Responsive design */
+}
+
+.card {
+    background-color: #4a4a4a; /* Dull background color */
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Two cards per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease; /* Smooth transition */
+    color: #ddd; /* Text color */
+    text-align: left; /* Align text to the left */
+    transform: scale(1); /* Initial scale */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff69b4; /* White color for headings */
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ccc; /* Light grey color for descriptions */
+}
+
+.card a {
+    font-size: 16px;
+    color: #ff69b4; /* Pink color for links */
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly larger on hover */
+    color: #fff; /* Text color on hover */
+}
+
+/*----------------CONTACT----------------*/
+
+.contact h2 {
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffffff, #c8317d); /* Pink and white gradient */
+    -webkit-background-clip: text; /* Clip the background to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent */
+    margin-bottom: 20px;
+    text-align: center; /* Left align the heading */
+    display: inline-block; /* Ensure gradient appears */
+    width: 100%;
+}
+.contact form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact form label {
+    background: linear-gradient(90deg, #fdfdfd, #b9137c); /* Pink and white gradient */
+    -webkit-background-clip: text; /* Clip the background to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent */
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+.contact form input, .contact form textarea {
+    width: 40%;
+    background-color: #585758;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #b0277e;
+}
+.contact form button {
+    padding: 12px 24px;
+    border: none;
+    background-color: #585758;
+    border-radius: 5px;
+    border: 2px solid #b0277e;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+/*----------------FOOTER---------------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #b0277e;
+}
+.footers {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 23px 0;
+    width: 100%;
+}
+.footers ul {
+    list-style: none;
+    padding: 0;
+}
+footer > div {
+    width: 123px;
+}
+.footer-right {
+    text-align: center;
+    color: gray;
+    width: 100%;
+}
+.footer-right a {
+    color: gray;
+    text-decoration: none;
+}
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+/*----------------EXTRA----------------*/
+
+/* Highlighting terms in the paragraph */
+.highlight {
+    font-weight: bolder;
+    color: #9d0064; /* White text */
+    font-weight: bold; /* Bold text */
+    padding: 2px 4px; /* Padding for spacing */
+   
+}
+
+/*---------hr------------*/
+main hr{
+    border: 0;
+    background: #b0277e;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+/*----ColorGrading-----*/
+.content{
+    background: linear-gradient(90deg, #fdfdfd, #b9137c); /* Pink and white gradient */
+    -webkit-background-clip: text; /* Clip the background to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent */
+}
